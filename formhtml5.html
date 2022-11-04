@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longaniza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function updateTxtRange(valor) {
+            document.getElementById('idrange').value = valor
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <div id="principal">
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="parrafos.html">
+                        <li>PÁRRAFOS</li>
+                    </a>
+                    <a href="enlaces.html">
+                        <li>ENLACES</li>
+                    </a>
+                    <a href="tablas.html">
+                        <li>TABLAS</li>
+                    </a>
+                    <a href="listas.html">
+                        <li>LISTAS</li>
+                    </a>
+                    <a href="formularios.html">
+                        <li>FORMULARIOS</li>
+                    </a>
+                    <a href="multimedia.html">
+                        <li>MULTIMEDIA</li>
+                    </a>
+                    <a href="formhtml5.html">
+                        <li>FORMHTML5</li>
+                    </a>
+                </ul>
+            </nav>
+            <div id="content">
+                <div id="formhtml5">
+                    <h1 class="txt-center">Formularios HTML5</h1>
+                    <p></p>
+                    <form action="TuAbuelaEnBici.php" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Form HTML5</legend>
+                            <input type="url" placeholder="URL (No RickRolls)" id="url"> <br> <br>
+                            <input type="email" placeholder="Email" id="email"> <br><br>
+                            <input type="date" placeholder="fecha" id="fecha"><br> <br>
+                            <input type="datetime-local" placeholder="fechahora" id="fechahora"> <br> <br>
+                            <input type="month" placeholder="mes" id="mes"> <br><br>
+                            <input type="week" placeholder="semana" id="semana"> <br><br>
+                            Color de la señal de prohíbido:<br>
+                            <input type="color" placeholder="color" id="color"> <br><br>
+                            <input type="number" placeholder="numero" id="numero" min="0000" max="9001"> <br><br>
+                            <p>
+                                <input type="range" placeholder="range" id="range" min="0000" max="9001"
+                                    onchange="updateTxtRange(this.value)">
+                                <input type="text" id="idrange" disabled>
+                            </p>
+                            <p><input type="hidden" name="var" value="bicicleta"></p>
+                            <input type="file" placeholder="archivo" id="fichero"> <br><br>
+                            <input type="image" placeholder="archivo" src="img/esfera7.png"> <br><br>
+                            <input type="search" placeholder="Buscar..." id="buscar"> <br><br>
+
+
+                            <p class="txt-center"><input type="submit" value="Enviar"> <input type="reset"
+                                    value="Borrar"> </p>
+                        </fieldset>
+                        <p></p>
+                    </form>
+                </div>
+            </div>
+            <div class="cb"></div>
+        </div>
+        <footer>&copy; Javi </footer>
+    </div>
+</body>
+
+</html>
