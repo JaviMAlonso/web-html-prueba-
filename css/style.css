@@ -102,6 +102,12 @@ a {
 .txt-center {
     text-align: center;
 }
+#tablas{
+    padding: 24px;  
+}
+#listas{
+    padding: 24px;
+}
 
 .txt-azul {
     color: rgb(0, 102, 255);
